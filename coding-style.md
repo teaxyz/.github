@@ -6,7 +6,7 @@
 * Prefer double quotes, `"`, over single quotes, `'`
 * Prefer `kebab-case`, then `camelCase`. Most languages do not support
     kebab-case, however *you can name your files this way*.
-
+* Avoid `async` for chainable constructs since TypeScript does not chain off the promise result and usage becomes awkward
 
 ## Generally
 

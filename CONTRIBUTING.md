@@ -11,6 +11,9 @@ This means:
 2. The shorter the better[^2]
 3. Avoid moving code around unnecessarily[^3]
 4. Force push rather than merge when `main` advances[^4]
+5. Add lots of comments (but not too many[^5])
+6. Mark in-progress PRs as *drafts*
+7. *For documentation*, use newlines at natural breaks, ie. sentences[^7]
 
 [^1]: We know it’s hard to avoid tweaking this and that as you work, but
     unfortunately anything that is not specific to the purpose of the pull
@@ -22,6 +25,10 @@ This means:
     regressed in the code movements.[^refactors]
 [^4]: Merge commits are instructive when merging pull requests, but they are
     a hindrance during the pull request review period.
+[^5]: If the code is clear, don’t comment it: you’re just reducing clarity,
+    but if it not’s clear *comment it!* Otherwise you’re also reducing
+    clarity!
+[^7]: `git` diffs at newlines, breaking at human contexts ensures readable diffs and expedient review.
 
 [^refactors]: Don’t get us wrong: We love refactors!
     Over time code gets warts and you might well be the beautician we need.
